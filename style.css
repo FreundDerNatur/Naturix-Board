@@ -1,0 +1,18 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #222;
+    padding: 20px;
+}
+h1, h2 {
+    color: #006400;
+}
+#timeDisplay {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.task-done {
+    text-decoration: line-through;
+    color: gray;
+}
