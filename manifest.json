@@ -1,0 +1,16 @@
+
+{
+  "name": "Naturix Zeitpilot",
+  "short_name": "Zeitpilot",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#006400",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/861/861060.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
