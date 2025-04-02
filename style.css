@@ -1,18 +1,39 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
-    color: #222;
+    background-color: #f5f5f5;
     padding: 20px;
 }
 h1, h2 {
     color: #006400;
 }
-#timeDisplay {
-    font-size: 1.2em;
+form {
     margin-bottom: 20px;
+}
+input, button {
+    margin: 5px;
+    padding: 5px;
 }
 .task-done {
     text-decoration: line-through;
     color: gray;
+}
+#timeline {
+    position: relative;
+    height: 120px;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.task-bar {
+    position: absolute;
+    height: 30px;
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 3px;
+    border-radius: 4px;
 }

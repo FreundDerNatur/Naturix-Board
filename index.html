@@ -5,29 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturix Zeitpilot</title>
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Naturix Zeitpilot</h1>
     <div id="timeDisplay"></div>
 
-    <h2>Nächste Deadline</h2>
-    <div id="nextDeadline"></div>
-    <div id="countdown"></div>
+    <h2>Neue Aufgabe</h2>
+    <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Aufgabe" required>
+        <input type="datetime-local" id="taskTime" required>
+        <button type="submit">Hinzufügen</button>
+    </form>
 
-    <h2>Aufgaben</h2>
+    <h2>Aufgabenliste</h2>
     <ul id="taskList"></ul>
 
+    <h2>Timeline</h2>
+    <div id="timeline"></div>
+
     <script src="script.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then(reg => console.log('Service Worker registriert:', reg.scope))
-                    .catch(err => console.error('Service Worker Fehler:', err));
-            });
-        }
-    </script>
 </body>
 </html>
